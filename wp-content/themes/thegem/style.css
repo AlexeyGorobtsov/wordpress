@@ -2515,9 +2515,9 @@ body.admin-bar #page.vertical-header #site-header-wrapper {
 	opacity: 1;
 }
 #primary-navigation .hamburger-toggle {
-	border: none;
-	width: 36px;
-	height: 30px;
+	border: 1px solid rgba(255,255,255,.3);
+	width: 70px;
+	height: 70px;
 	text-indent: 100%;
 	font-size: 0;
 	line-height: 0;
@@ -2533,17 +2533,19 @@ body.admin-bar #page.vertical-header #site-header-wrapper {
 	margin-right: 0;
 	margin-top: 35px;
 	margin-bottom: 35px;
+	border-radius: 50%;
 }
 #primary-navigation .hamburger-toggle .menu-line-1,
 #primary-navigation .hamburger-toggle .menu-line-2,
 #primary-navigation .hamburger-toggle .menu-line-3 {
 	position: absolute;
 	height: 4px;
-	width: 100%;
-	left: 0;
+	width: 50%;
+	left: 17px;
 	-o-transition: all 1s;
 	-webkit-transition: all 1s;
 	transition: all 1s;
+	margin-top: 18px;
 }
 #primary-navigation .hamburger-toggle .menu-line-1 {
 	top: 3px;
@@ -7880,27 +7882,34 @@ body .blog {
 }
 .page-scroller-nav-pane {
 	position: fixed;
-	right: 50px;
+	/*right: 50px;*/
 	top: 50%;
 	-o-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	z-index: 10;
+	margin-left: 40px;
 }
 .page-scroller-nav-item {
 	display: block;
-	height: 10px;
-	width: 10px;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
-	margin: 10px 0;
+	height: 5px;
+	width: 45px;
+	border: 1px solid #ffffff;
+	/*border-radius: 50%;*/
+	margin: 14px 0;
 	-o-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
+	background-color: #ffffff;
 }
 .page-scroller-nav-item.active {
 	background-color: #ffffff;
+	width: 70px;
+}
+.page-scroller-nav-item:hover {
+	background-color: #ffffff;
+	width: 70px;
 }
 
 body.page-scroller #page #site-header.fixed.shrink {
